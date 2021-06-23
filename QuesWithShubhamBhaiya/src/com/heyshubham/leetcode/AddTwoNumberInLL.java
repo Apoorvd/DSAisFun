@@ -5,6 +5,7 @@ class ListNode {
     ListNode next;
 
     ListNode() {
+        this.next=null;
     }
 
     ListNode(int val) {
@@ -44,9 +45,6 @@ public class AddTwoNumberInLL {
         list.next = null;
         previous.next = (c > 0 ? list : null);
         return head.next;
-    }
-    public void insertNode(int val){
-
     }
 
     public static void main(String[] args) {
