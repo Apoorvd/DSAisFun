@@ -80,4 +80,108 @@ public class LeetCode_34 {
         }
         return -1;
     }
+
+    //
+    /*
+    public int[] searchRange(int[] nums, int target) {
+        int res[]=new int[2];
+        res[0]=nums.length!=0?lowerBound(nums,0,nums.length-1,target):-1;
+        res[1]=nums.length!=0?upperBound(nums,0,nums.length-1,target):-1;
+        return res;
+
+    }
+    public int lowerBound(int nums[], int left, int right,int x){
+        if(left==right){
+            if(nums[left]==x)
+                return left;
+            else
+                return -1;
+        }
+        int mid =left+(right-left)/2;
+        if(x<=nums[mid]){
+            return lowerBound(nums,left,mid, x);
+        }else{
+            return lowerBound(nums, mid+1, right, x);
+        }
+    }
+    public int upperBound(int nums[],int left, int right,int x){
+        if(left==right){
+            if(nums[left]==x)
+                return left;
+            else
+                return -1;
+        }
+        int mid =left+(right-left+1)/2;
+        if(x>=nums[mid]){
+            return upperBound(nums,mid,right, x);
+        }else{
+            return upperBound(nums, left, mid-1, x);
+        }
+    }
+     */
+
+    /*
+    private int findFirst(int[] nums, int target){
+    int idx = -1;
+    int start = 0;
+    int end = nums.length - 1;
+    while(start <= end){
+        int mid = (start + end) / 2;
+        if(nums[mid] >= target){
+            end = mid - 1;
+        }else{
+            start = mid + 1;
+        }
+        if(nums[mid] == target) idx = mid;
+    }
+    return idx;
+}
+
+private int findLast(int[] nums, int target){
+    int idx = -1;
+    int start = 0;
+    int end = nums.length - 1;
+    while(start <= end){
+        int mid = (start + end) / 2;
+        if(nums[mid] <= target){
+            start = mid + 1;
+        }else{
+            end = mid - 1;
+        }
+        if(nums[mid] == target) idx = mid;
+    }
+    return idx;
+}
+     */
+
+    /*
+    public int[] searchRange(int[] nums, int target) {
+		int[] res = {-1, -1};
+		int lo = 0, hi = nums.length - 1;
+
+		//lo is the start index of target
+		//hi is the end index of target
+		while(nums[lo] < nums[hi]) {
+			int mid = lo + (hi - lo)/2;
+			if(nums[mid] > target) {//target is in the left half
+				hi = mid - 1;
+			} else if(nums[mid] < target) {// target is in the right half
+				lo = mid + 1;
+			} else {//find target, then need to find the start and end point
+				if(nums[lo] == nums[mid]) {
+					hi--;
+				}else {
+					lo++;
+				}
+			}
+		}
+		//check whether find the target number
+		if(nums[lo] == nums[hi] && nums[lo]== target) {
+			res[0] = lo;
+			res[1] = hi;
+		}
+
+		return res;
+	}
+     */
 }
