@@ -4,9 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/DSA_JAVA_on_Intellij.iml" filepath="$PROJECT_DIR$/.idea/DSA_JAVA_on_Intellij.iml" />
       <module fileurl="file://$PROJECT_DIR$/Experimental/Experimental.iml" filepath="$PROJECT_DIR$/Experimental/Experimental.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Fundwave/Fundwave.iml" filepath="$PROJECT_DIR$/Fundwave/Fundwave.iml" />
       <module fileurl="file://$PROJECT_DIR$/GFG/GFG.iml" filepath="$PROJECT_DIR$/GFG/GFG.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java_DSA/Java_DSA.iml" filepath="$PROJECT_DIR$/Java_DSA/Java_DSA.iml" />
       <module fileurl="file://$PROJECT_DIR$/QuesWithShubhamBhaiya/QuesWithShubhamBhaiya.iml" filepath="$PROJECT_DIR$/QuesWithShubhamBhaiya/QuesWithShubhamBhaiya.iml" />
-      <module fileurl="file://$PROJECT_DIR$/TopicArrays/TopicArrays.iml" filepath="$PROJECT_DIR$/TopicArrays/TopicArrays.iml" />
       <module fileurl="file://$PROJECT_DIR$/TopicLinkedList/TopicLinkedList.iml" filepath="$PROJECT_DIR$/TopicLinkedList/TopicLinkedList.iml" />
       <module fileurl="file://$PROJECT_DIR$/TopicTree/TopicTree.iml" filepath="$PROJECT_DIR$/TopicTree/TopicTree.iml" />
     </modules>
